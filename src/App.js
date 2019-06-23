@@ -24,56 +24,68 @@ class App extends Component {
       this.setState({ clicked: this.state.clicked.concat(id) })
 
       const updatedScore = this.state.score + 1
-      this.setState({ 
+      this.setState({
         score: updatedScore,
-        statement: "Wooohoo, that's correct!"})
+        statement: "Wooohoo, that's correct!"
+      })
 
-        //update topScore
-        if (updatedScore >= this.state.topScore) {
-          this.setState({ topScore: updatedScore })
-        }
+      //update topScore
+      if (updatedScore >= this.state.topScore) {
+        this.setState({ topScore: updatedScore })
+      }
 
-        //if score is max (12), show message and then reset values
-        if (updatedScore === 12) {
-          this.state({
-            flowers,
-            statement: 'Congrats! You won!',
-            score: 0,
-            clicked: [] })
-        }
-        //sort the flowers randomly
-        this.setState({ flowers:this.state.flowers.sort(function(a,b) {return 0.5 - Math.random()} ) } )
+      //if score is max (12), show message and then reset values
+      if (updatedScore === 12) {
+        this.setState({
+          flowers,
+          statement: 'Congrats! You won!',
+          score: 0,
+          clicked: []
+        })
+      }
+      //sort the flowers randomly
+      this.setState({ flowers: this.state.flowers.sort(function (a, b) { return 0.5 - Math.random() }) })
+    } else {
+      //if the guess is incorrect, reset the values
+      this.setState({
+        flowers,
+        statement: "uh oh! That was incorrect!",
+        score: 0,
+        clicked: []
+      })
+      this.setState({ flowers: this.state.flowers.sort(function (a, b) { return 0.5 - Math.random() }) })
     }
   }
+
 
   render() {
     return (
       <div>
         <Header
-          statement = { this.state.statement }
-          score = { this.state.score }
-          topScore = { this.state.topScore }
-          />
-          <Container>
-            <Row>
-              { this.state.flowers.map(flowers => (
-                <Col size ="md-3" key = { flowers.id} >
-                    <Flower
-                      id = { flowers.id }
-                      image = { flowers.image }
-                      handleOnClick = { this.handleOnClick } />
-                </Col>
-              ))}
-            </Row>
-          </Container>
-          <Alert
-            type = "success"
-            style = {{ opacity: this.state.topScore === 12 ? 1 : 0, marginBottom: 10 }} 
-            >
-              <h1 style = {{ textAlign: "center" }}> { this.statement} </h1>
+          statement={this.state.statement}
+          score={this.state.score}
+          topScore={this.state.topScore}
+        />
+        <Container>
+          <Row>
+            {this.state.flowers.map(flowers => (
+              <Col size="md-3" key={flowers.id} >
+                <Flower
+                  id={flowers.id}
+                  image={flowers.image}
+                  handleOnClick={this.handleOnClick} />
+              </Col>
+            ))}
+          </Row>
+        </Container>
+        <Alert
+          type="success"
+          style={{ opacity: this.state.topScore === 12 ? 1 : 0, marginBottom: 10 }}
+        >
+          <h1 style={{ textAlign: "center" }}> {this.statement} </h1>
 
-          </Alert>
-          <Footer />
+        </Alert>
+        <Footer />
       </div>
     );
   }
