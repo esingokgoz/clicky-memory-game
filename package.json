@@ -2,7 +2,7 @@
   "name": "clicky-memory-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/esingokgoz/clicky-memory-game",
+  "homepage": "https://esingokgoz.github.io/clicky-memory-game/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
