@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/esingokgoz/clicky-memory-game/static/css/main.f8c8c44f.chunk.css",
-    "main.js": "/esingokgoz/clicky-memory-game/static/js/main.a06d6f9a.chunk.js",
-    "main.js.map": "/esingokgoz/clicky-memory-game/static/js/main.a06d6f9a.chunk.js.map",
-    "runtime~main.js": "/esingokgoz/clicky-memory-game/static/js/runtime~main.1ad629c1.js",
-    "runtime~main.js.map": "/esingokgoz/clicky-memory-game/static/js/runtime~main.1ad629c1.js.map",
-    "static/js/2.3bcb0307.chunk.js": "/esingokgoz/clicky-memory-game/static/js/2.3bcb0307.chunk.js",
-    "static/js/2.3bcb0307.chunk.js.map": "/esingokgoz/clicky-memory-game/static/js/2.3bcb0307.chunk.js.map",
-    "index.html": "/esingokgoz/clicky-memory-game/index.html",
-    "precache-manifest.e192bf625c98bc1fd1c40710e1bf6c83.js": "/esingokgoz/clicky-memory-game/precache-manifest.e192bf625c98bc1fd1c40710e1bf6c83.js",
-    "service-worker.js": "/esingokgoz/clicky-memory-game/service-worker.js",
-    "static/css/main.f8c8c44f.chunk.css.map": "/esingokgoz/clicky-memory-game/static/css/main.f8c8c44f.chunk.css.map"
+    "main.css": "/clicky-memory-game/static/css/main.f8c8c44f.chunk.css",
+    "main.js": "/clicky-memory-game/static/js/main.5c8be8f5.chunk.js",
+    "main.js.map": "/clicky-memory-game/static/js/main.5c8be8f5.chunk.js.map",
+    "runtime~main.js": "/clicky-memory-game/static/js/runtime~main.83671481.js",
+    "runtime~main.js.map": "/clicky-memory-game/static/js/runtime~main.83671481.js.map",
+    "static/js/2.3bcb0307.chunk.js": "/clicky-memory-game/static/js/2.3bcb0307.chunk.js",
+    "static/js/2.3bcb0307.chunk.js.map": "/clicky-memory-game/static/js/2.3bcb0307.chunk.js.map",
+    "index.html": "/clicky-memory-game/index.html",
+    "precache-manifest.97743c70d4a7df84e89d9a4ef40c80b2.js": "/clicky-memory-game/precache-manifest.97743c70d4a7df84e89d9a4ef40c80b2.js",
+    "service-worker.js": "/clicky-memory-game/service-worker.js",
+    "static/css/main.f8c8c44f.chunk.css.map": "/clicky-memory-game/static/css/main.f8c8c44f.chunk.css.map"
   }
 }
